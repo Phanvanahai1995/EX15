@@ -256,7 +256,7 @@
   cursor: pointer;
   display: none;
 
-  @include abstracts.screen(xxl) {
+  @include abstracts.screen(lg) {
     display: block;
   }
 }
@@ -266,7 +266,7 @@
   color: #fff;
   display: none;
 
-  @include abstracts.screen(lg) {
+  @include abstracts.screen(xxl) {
     display: block;
   }
 }

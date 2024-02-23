@@ -1778,7 +1778,7 @@ button {
   cursor: pointer;
   display: none;
 }
-@media (max-width: 1399.98px) {
+@media (max-width: 991.98px) {
   .fa-bars {
     display: block;
   }
@@ -1789,7 +1789,7 @@ button {
   color: #fff;
   display: none;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1399.98px) {
   .fa-user {
     display: block;
   }
