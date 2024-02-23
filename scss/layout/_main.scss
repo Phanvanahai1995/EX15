@@ -17,10 +17,6 @@
     margin: 0 auto;
   }
 
-  @include abstracts.screen(sm) {
-    padding: 0 10px 0 30px;
-  }
-
   &-body {
     margin-top: 46px;
   }
@@ -180,6 +176,12 @@
   &-sell {
     margin-top: 44px;
 
+    &__heading {
+      @include abstracts.screen(lg) {
+        text-align: center;
+      }
+    }
+
     &__list {
       display: flex;
       align-items: center;
@@ -253,6 +255,10 @@
   &-bids {
     &__heading {
       margin-top: 40px;
+
+      @include abstracts.screen(lg) {
+        text-align: center;
+      }
     }
 
     &__list {
