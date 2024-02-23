@@ -1,0 +1,26 @@
+const actionProfile = document.querySelector(".header-action__profile");
+const profile = document.querySelector(".profile-info");
+const overlay = document.querySelector(".profile-overlay");
+const headerAction = document.querySelector(".header-action");
+const overlayAction = document.querySelector(".header-action__overlay");
+const bar = document.querySelector(".fa-bars");
+
+actionProfile.addEventListener("click", function () {
+  profile.classList.add("profile-info__hide");
+  overlay.classList.add("profile-overlay__hide");
+});
+
+overlay.addEventListener("click", function () {
+  profile.classList.remove("profile-info__hide");
+  overlay.classList.remove("profile-overlay__hide");
+});
+
+bar.addEventListener("click", function () {
+  headerAction.classList.add("header-action__hide");
+  overlayAction.classList.add("header-action__overlay-hide");
+});
+
+overlayAction.addEventListener("click", function () {
+  headerAction.classList.remove("header-action__hide");
+  overlayAction.classList.remove("header-action__overlay-hide");
+});

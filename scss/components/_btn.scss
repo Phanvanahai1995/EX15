@@ -1,0 +1,8 @@
+.btn:hover {
+  border: 2px solid var(--Primary-Gd-1, #00a5ff);
+  border: 2px solid var(--Primary-Gd-1, color(display-p3 0.3059 0.6275 0.9725));
+  background: #161a43;
+  background: color(display-p3 0.0902 0.102 0.251);
+  box-shadow: 0px 13px 17px 0px rgba(140, 213, 105, 0.2);
+  box-shadow: 0px 13px 17px 0px color(display-p3 0.6118 0.8275 0.4627 / 0.2);
+}
