@@ -118,18 +118,16 @@
     }
 
     &__overlay {
-      @include abstracts.screen(xxl) {
-        position: fixed;
-        inset: 0 0 0 0;
-        background: #ccc;
-        background: color(display-p3 0.0431 0.051 0.1255);
-        opacity: 0.8;
-        display: none;
-        z-index: 1;
+      position: fixed;
+      inset: 0 0 0 0;
+      background: #ccc;
+      background: color(display-p3 0.0431 0.051 0.1255);
+      opacity: 0.8;
+      display: none;
+      z-index: 2;
 
-        &-hide {
-          display: block;
-        }
+      &-hide {
+        display: block;
       }
     }
 

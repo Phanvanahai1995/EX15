@@ -1216,7 +1216,7 @@ button {
     align-items: flex-start;
     position: fixed;
     top: 0;
-    inset: 0 50% 0 0;
+    inset: 0 0 0 0;
     visibility: hidden;
     opacity: 0;
     translate: -100%;
@@ -1662,19 +1662,17 @@ button {
   visibility: visible;
   opacity: 1;
 }
-@media (max-width: 1399.98px) {
-  .header-action__overlay {
-    position: fixed;
-    inset: 0 0 0 0;
-    background: #ccc;
-    background: color(display-p3 0.0431 0.051 0.1255);
-    opacity: 0.8;
-    display: none;
-    z-index: 1;
-  }
-  .header-action__overlay-hide {
-    display: block;
-  }
+.header-action__overlay {
+  position: fixed;
+  inset: 0 0 0 0;
+  background: #ccc;
+  background: color(display-p3 0.0431 0.051 0.1255);
+  opacity: 0.8;
+  display: none;
+  z-index: 2;
+}
+.header-action__overlay-hide {
+  display: block;
 }
 .header-action__list {
   display: flex;
