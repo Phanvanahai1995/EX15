@@ -1726,7 +1726,6 @@ button {
   display: flex;
   flex-direction: column;
   margin-left: 16px;
-  cursor: pointer;
 }
 .header-action__profile-user {
   color: #e3e4e8;
@@ -2045,6 +2044,7 @@ button {
 }
 .main-bids__action img:last-child {
   margin-right: 8px;
+  cursor: pointer;
 }
 .main-bids__action-time {
   position: absolute;
