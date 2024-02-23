@@ -16,8 +16,25 @@
     color(display-p3 0.0902 0.102 0.251 / 0) 118.29%
   );
 
-  @include abstracts.screen(xl) {
-    width: 50px;
+  @include abstracts.screen(lg) {
+    width: 200px;
+    flex-direction: row;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    inset: 0 50% 0 0;
+    visibility: hidden;
+    opacity: 0;
+    translate: -100%;
+    z-index: 999;
+    transition: opacity 0.2s, visibility 0.2s, translate 0.2s;
+    border-radius: 0;
+
+    &-hide {
+      opacity: 1;
+      visibility: visible;
+      translate: 0;
+    }
   }
 
   @include abstracts.screen(md) {
@@ -36,8 +53,8 @@
     border-radius: 6px;
     transition: background-color 0.2s ease;
 
-    @include abstracts.screen(md) {
-      margin-top: 20px;
+    @include abstracts.screen(lg) {
+      margin-top: 10px;
     }
 
     &:hover::before {
@@ -64,8 +81,8 @@
     &:last-child {
       margin-top: 225px;
 
-      @include abstracts.screen(md) {
-        margin-top: 70px;
+      @include abstracts.screen(lg) {
+        margin-top: 0;
       }
     }
 
@@ -85,8 +102,8 @@
       width: 36px;
     }
 
-    @include abstracts.screen(md) {
-      margin: 10px auto;
+    @include abstracts.screen(lg) {
+      margin: 0 auto;
     }
   }
 }

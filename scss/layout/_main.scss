@@ -12,6 +12,11 @@
     padding: 0 10px;
   }
 
+  @include abstracts.screen(lg) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
   @include abstracts.screen(sm) {
     padding: 0 10px 0 30px;
   }

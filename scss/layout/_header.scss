@@ -10,11 +10,19 @@
   display: flex;
   align-items: center;
 
+  @include abstracts.screen(lg) {
+    justify-content: space-between;
+  }
+
   &-form {
     margin-right: 45px;
 
     @include abstracts.screen(xxl) {
       margin-right: auto;
+    }
+
+    @include abstracts.screen(lg) {
+      margin-right: 0;
     }
   }
 
@@ -249,6 +257,16 @@
   display: none;
 
   @include abstracts.screen(xxl) {
+    display: block;
+  }
+}
+
+.fa-user {
+  font-size: 2rem;
+  color: #fff;
+  display: none;
+
+  @include abstracts.screen(lg) {
     display: block;
   }
 }

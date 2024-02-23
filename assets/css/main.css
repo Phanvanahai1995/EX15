@@ -1209,9 +1209,25 @@ button {
   background: linear-gradient(162deg, #161a43 22.61%, #161a43 118.29%);
   background: linear-gradient(162deg, color(display-p3 0.0902 0.102 0.251) 22.61%, color(display-p3 0.0902 0.102 0.251/0) 118.29%);
 }
-@media (max-width: 1199.98px) {
+@media (max-width: 991.98px) {
   .navbar {
-    width: 50px;
+    width: 200px;
+    flex-direction: row;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    inset: 0 50% 0 0;
+    visibility: hidden;
+    opacity: 0;
+    translate: -100%;
+    z-index: 999;
+    transition: opacity 0.2s, visibility 0.2s, translate 0.2s;
+    border-radius: 0;
+  }
+  .navbar-hide {
+    opacity: 1;
+    visibility: visible;
+    translate: 0;
   }
 }
 @media (max-width: 767.98px) {
@@ -1231,9 +1247,9 @@ button {
   border-radius: 6px;
   transition: background-color 0.2s ease;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .navbar-item {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 .navbar-item:hover::before {
@@ -1254,9 +1270,9 @@ button {
 .navbar-item:last-child {
   margin-top: 225px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .navbar-item:last-child {
-    margin-top: 70px;
+    margin-top: 0;
   }
 }
 .navbar-item:hover {
@@ -1275,9 +1291,9 @@ button {
     width: 36px;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .navbar-decorate {
-    margin: 10px auto;
+    margin: 0 auto;
   }
 }
 
@@ -1541,12 +1557,22 @@ button {
   display: flex;
   align-items: center;
 }
+@media (max-width: 991.98px) {
+  .header {
+    justify-content: space-between;
+  }
+}
 .header-form {
   margin-right: 45px;
 }
 @media (max-width: 1399.98px) {
   .header-form {
     margin-right: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .header-form {
+    margin-right: 0;
   }
 }
 .header-lbl {
@@ -1758,6 +1784,17 @@ button {
   }
 }
 
+.fa-user {
+  font-size: 2rem;
+  color: #fff;
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .fa-user {
+    display: block;
+  }
+}
+
 .main {
   width: calc(100% - 78px);
   padding: 0 32px;
@@ -1770,6 +1807,12 @@ button {
 @media (max-width: 1199.98px) {
   .main {
     padding: 0 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .main {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 575.98px) {
